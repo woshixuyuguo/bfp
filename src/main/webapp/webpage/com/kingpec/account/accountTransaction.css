@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-size: 15px;
+			background-color: #f5f5f5;
+			font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft YaHei UI","Microsoft YaHei",SimHei,"宋体",SimSun,Sans-Serif; 
+			/* min-width: 1000px; */
+		}	
+		li{
+			list-style: none;
+		}
+		.account{
+			padding:35px 50px;
+		}
+		.my-account,.list{
+			box-shadow: 0 2px 7px #d3dde9;
+			width: calc(100% - 120px);
+			background-color: #fff;
+			border-radius: 10px;
+			padding:25px 60px;
+		}
+		.my-account{
+			/* height: 270px; */
+		}
+		.my-account h2{
+			width: 240px;
+			height: 36px;
+			font-size:18px;
+			color: #fff;
+			text-align: center;
+			line-height: 36px;
+			background-color: #587abe;
+			border-bottom-left-radius:20px;
+			border-top-right-radius:20px;
+			border-bottom-right-radius:20px;
+		}
+
+		.account-detail{
+			display: flex;
+			justify-content:space-between;
+		}
+		.account-detail .left-img{
+			width: 100%;
+			height: 100%;
+		}
+		.account-detail .sum{
+			width: 50%;
+			padding:0 30px;
+		}
+		.current-sum {
+			padding-bottom: 30px;
+			border-bottom: 1px solid #ddd;
+		}
+		.current-sum div,.current-sum img{
+			vertical-align: middle;
+		}
+		.current-sum div{
+			display: inline-block;
+			font-size:35px;
+			color: #ff4946;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.current-sum img{
+			margin:0 30px;
+			width:15%;
+		}
+		.current-sum div p:nth-child(1){
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+		.current-sum div p:nth-child(2) {
+			font-size:40px;
+		}
+		.current-sum div p:nth-child(2) span{
+			font-size:20px;
+		}
+		.sum ul{
+			display: flex;				
+		}
+		.sum ul li{
+			font-size: 20px;
+			width: 325px;
+			padding-top:30px;
+			text-align: center;
+		}
+		.sum ul li p:nth-child(1){
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.sum ul li p:nth-child(2){
+			font-size: 25px;
+		}
+		.sum ul li p:nth-child(2) span{
+			font-size: 20px;
+		}
+		.list{
+			height: 450px;
+			margin-top:25px;
+		}
+		
+		/*-------分公司账户-----------------*/
+		.office h2{
+			margin:30px 0;
+		}
+		 .clearfloat:after{
+		 	display:block;
+		 	clear:both;
+		 	content:"";
+		 	visibility:hidden;
+		 	height:0
+		 }
+   		.clearfloat{
+   			zoom:1
+   		}
+		.account-item{
+			float: left;
+			border:1px solid #ddd;
+			border-radius: 5px;
+			padding:0 15px;
+			width: calc(30% - 32px);
+			margin-left: 5%;
+			margin-bottom: 15px;
+		}
+		.account-item:nth-child(3n-2){
+			margin-left:0;
+		}
+		.account-item .account-name{
+			font-size: 16px;
+			font-weight: 400px;
+			border-bottom: 1px solid #ddd;
+			padding: 7px 10px ;
+		}
+		.account-item .account-record{
+			padding:5px 0;
+		}
+		.account-item .account-record p{	
+			padding:5px 0;
+			font-size:12px;
+			color:#999;
+		}
+		.account-item .account-record p.current-record{
+			padding:4px 0;
+			font-size: 15px;
+			color:#ff4946;
+			font-weight: 400px;
+		}
